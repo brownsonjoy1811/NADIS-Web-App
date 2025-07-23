@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    
+    <title>Store</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <link rel="stylesheet" href="../styles/header.css">
+    <link rel="stylesheet" href="../styles/store.css">
+    <link rel="stylesheet" href="../styles/footer.css">
+    <link rel="stylesheet" href="../styles/side-bar.css">
+
+    <!--  -->
+  <script src="Index.js" defer></script>
+  <script src="/js/js/cart.js" defer></script>
+  <script src="/js/js/Search.js" defer></script>
+    
+</head>
+<body>
+    <!-- <div id="header"></div> -->
+    <!-- <div id="sidebar"></div> -->
+
+    
+       <!-- SideBar -->
+    <div id="sideNav" class="side-nav">
+       <button  class="closebtn" onclick="closeNav()" >&times;</button>
+
+           <div id="navbar-logo">
+                <img src="images/logo.PNG" alt="NadisBestComputers Logo">
+            </div>
+                
+
+         <h4>Main Menu</h4>
+           <a href="Index.html">Home</a>
+           <a href="store.html">Products</a>
+           <a href="Services.html">Services</a>
+           <a href="About.html">About</a>
+
+         <h4>Browse Categories</h4>
+             <a href="/Products HTML/Toner Cartridge.html"><i class="fas fa-print"></i> Catridges</a>
+             <a href="/Products HTML/Head Phones.html"><i class="fas fa-headphones"></i> Head phones</a>
+             <a href="/Products HTML/Flash Drive.html"><i class="fas fa-hdd"></i> Flash Drive</a>
+             <a href="/Products HTML/Earpod.html"><i class="fas fa-music"></i> EarPod</a>
+             <a href="/Products HTML/Speaker.html"><i class="fas fa-volume-up"></i>speaker</a>
+             <a href="/Products HTML/Keyboard.html"><i class="fas fa-keyboard"></i> Keyboard</a>
+             <a href="/Products HTML/Smart Watch.html"><i class="fas fa-clock"></i>Smart Watch</a>
+             <a href="/Products HTML/Power Bank.html"><i class="fas fa-bolt"></i> Power Bank</a>
+             <a href="/Products HTML/Mouse.html"><i class="fas fa-mouse"></i> Mouse</a>
+             <a href="/Products HTML/Printer.html"><i class="fas fa-print"></i> Printers <span class="new-badge">NEW</span></a>
+         <h4>Extras</h4>
+            <a href="#"><i class="fas fa-heart"></i> Wishlist</a>
+            <a href="#"><i class="fas fa-balance-scale"></i> Compare</a>
+
+       <h4 class="contact-details">Contact Details</h4>
+           <div class="contact-div"> <p><i class="fas fa-phone"></i> +234 (0) 8023957773 /   8066549599 </p></div>
+          <div class="contact-div"><p><i class="fas fa-envelope"></i> NadisBestComputers@gmail.com</p></div>
+          <div class="contact-div"> <p><i class="fas fa-map-marker-alt"></i> 240, Herbert Macauley, Alagomeji, Yaba, Lagos. </p></div>
+
+
+  
+        <h6 class="footer">Developed by: Systems Business Schools | All right reserved</h6>
+
+</div>
+
+
+
+
+
+    <div class="header">
+
+        <div class="left-section">
+
+           <a href="#"  class="sideNav" onclick="openNav()">
+               <i class="fas fa-th"></i>
+              <span>Menu</span>
+            </a>
+
+            <div id="navbar-logo">
+              <img src="images/logo.PNG" alt="NadisBestComputers Logo">
+            </div>
+
+            <div class="search-bar">
+              <input type="text" placeholder="Search for products or brands" oninput="filterProduct()" id="searchValue">
+              <button><i class="fas fa-search"></i></button>
+            </div>
+        </div>
+   
+        <div class="right-section">
+
+          <a href="Index.html" class="nav-link ">
+             <i class="fas fa-home"></i>
+             <span>Home</span>
+         </a>
+
+          <a href="store.html" class="nav-link  active">
+             <i class="fas fa-store"></i>
+            <span>Store</span>
+          </a>
+
+          <a href="#">
+             <div class="cart-icon">
+               <i class="fas fa-shopping-cart"></i>
+               <div class="cart-count">8</div>
+             </div>
+           </a>
+        </div>
+    </div>
+              
+
+<section class="store-hero">
+  <div class="glass-box">
+    <h1>Discover Quality. Shop Smart.</h1>
+    <p>Elevate your everyday with tech essentials and accessories made to last.</p>
+    <!-- <a href="#shop" class="shop-btn">Shop Now</a> -->
+  </div>
+</section>
+
+<div id="searchReturns"></div>
+     
+    <main>
+      <section\ class="">
+        
+      </section>
+        <section class="products">
+            <h2>Our Products</h2>
+            <div class="product-grid">
+                <div class="product-card">
+                    <img src="images/headphones/04.png" alt="Headphone">
+                    <h3>Head Phone</h3>
+                    <p>$19.99</p>
+                    <button>Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="images/EarPod/1a.jpg" alt="Ear Pod">
+                    <h3>Ear Pod</h3>
+                    <p>$29.99</p>
+                    <button>Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="images/PowetBank/03.webp" alt="Power Bank">
+                    <h3>Power Bank</h3>
+                    <p>$39.99</p>
+                    <button>Add to Cart</button>
+                </div>
+
+                <div class="product-card">
+                    <img src="images/Flash-Drive/03.png" alt="Flash drive">
+                    <h3>Flash drive</h3>
+                    <p>$39.99</p>
+                    <button>Add to Cart</button>
+                </div>
+
+                <div class="product-card">
+                    <img src="images/EarPiece/1b.webp" alt="Ear Piece">
+                    <h3>Ear Piece</h3>
+                    <p>$39.99</p>
+                    <button>Add to Cart</button>
+                </div>
+
+                <div class="product-card">
+                    <img src="images/Toner-Caterage/06.jpg" alt="Cartridge">
+                    <h3>Cartridge</h3>
+                    <p>$39.99</p>
+                    <button>Add to Cart</button>
+                </div>
+
+                <div class="product-card">
+                    <img src="images/Mouse/03.jpg" alt="Mouse">
+                    <h3>Mouse</h3>
+                    <p>$39.99</p>
+                    <button>Add to Cart</button>
+                </div>
+
+                <div class="product-card">
+                    <img src="product-page/smartwatch/05.png" alt="Smart Watch">
+                    <h3>Smart Watch</h3>
+                    <p>$39.99</p>
+                    <button>Add to Cart</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- THE CART -->
+<div id="cart-sidebar" class="cart-sidebar">
+   <span class="close-btn" onclick="closeCart()">&times;</span>
+
+    <h1>Your Cart</h1>
+
+  <!-- Empty Cart Message -->
+  <div id="empty-cart" class="empty-cart">
+    <p>Your cart is currently empty 🛒</p>
+  </div>
+  
+  <div id="cart-items" class="cart-items">
+    <div class="cart-item">
+         <img src="images/headphones/06.png" alt="Headphone">
+    
+      <div class="item-details">
+         <h4>Headphone</h4>
+           <p>Price: ₦3,000</p>
+           <p class="original-price">₦4,000 <span class="discount">-3%</span></p>
+      </div>
+
+      <div class="actions">
+        <input type="number" name="" id="product-quantity" placeholder="0">
+        <button id="delete-product" onclick="delete_item()" >
+        <i class="fas fa-trash"></i>Delete
+      </button>
+      </div>
+
+      
+    </div>
+  </div>
+
+    <footer>
+        <p>&copy; 2023 E-commerce Store</p>
+    </footer>
+
+
+
+
+      <footer class="bottom-tab-nav">
+        <a href="https://wa.me/2348023957773?text=Hello%2C%20I'm%20interested%20in%20your%20products" class="nav-link" target="_blank">
+        <i class="fas fa-comment-dots"></i>
+        <span>Chat Us</span>
+        </a>
+      </footer>
+</body>
+</html>

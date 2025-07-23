@@ -1,0 +1,130 @@
+.header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 3rem;
+  position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+  width: 100%;
+  height: 80px;
+  padding: 10px 15px;
+  background-color: #f8f8f8;
+  border-top: 1px solid #ddd;
+}
+
+.left-section{
+    display: flex;
+    justify-content: space-around;
+    width: 80%;
+    height: auto;
+    align-items: center;
+}
+
+.search-bar {
+  position: relative;
+  max-width: 50%;
+  height: 40px;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  /* border: 1px solid #ccc; */
+  border-radius: 30px;
+  padding: 6px 10px;
+  /* box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05); */
+}
+
+.search-bar input {
+  /* flex: 1; */
+  border: none;
+  outline: none;
+  padding: 6px 12px;
+  width: 90%;
+  font-size: 14px;
+  border-radius: 30px;
+}
+
+.search-bar button {
+  position: absolute;
+  right: 17%;
+  border: none;
+  background: none;
+  color: #6a00ff;
+  font-size: 18px;
+  cursor: pointer;
+}
+.search-bar button:hover {
+  color: #5100cc;
+}
+
+
+.right-section{
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+    margin-top: 2px;
+    position: relative;
+    width: auto;
+}
+
+.cart-icon i{
+   font-size: 1.5rem;
+}
+/* .cart-icon{
+    position: relative;
+} */
+.cart_count{
+    font-size: 7px;
+    padding: 1px 4px;
+    position: absolute;
+    top: 1px;
+    right: -5px;
+    text-align: center;
+    background-color: #6a00ff;
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+    border-radius: 100%;
+}
+
+
+
+
+@media (max-width: 768px) {
+  .header {
+    padding: 10px 10px;
+  }
+
+  .middle-section {
+    margin-left: 20px;
+    max-width: 350px;
+  }
+
+  .search-bar {
+    max-width: 100%;
+    height: 34px;
+    padding: 4px 8px;
+  }
+
+  .search-bar input {
+    font-size: 13px;
+  }
+
+  .search-bar button {
+    font-size: 16px;
+  }
+
+  .cart-icon img {
+    width: 30px;
+  }
+
+  .cart_count {
+    font-size: 10px;
+    padding: 2px 4px;
+    top: 0;
+    right: -3px;
+  }
+}
+

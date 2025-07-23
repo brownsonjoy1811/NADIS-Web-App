@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=c, initial-scale=1.0">
+    <title>Nadis Best Computers</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <link rel="stylesheet" href="styles/Index.css">
+    <link rel="stylesheet" href="styles/side-bar.css">
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/footer.css">
+    <link rel="stylesheet" href="styles/cart.css">
+
+
+
+    <script src="/js/js/Index.js" defer></script>
+    <script src="/js/js/cart.js" defer></script>
+</head>
+<body>
+  <!-- <div id="sidebar"></div>
+  <div id="header"></div> -->
+
+     
+       <!-- SideBar -->
+    <div id="sideNav" class="side-nav">
+       <button  class="closebtn" onclick="closeNav()" >&times;</button>
+
+           <div id="navbar-logo">
+                <img src="images/logo.PNG" alt="NadisBestComputers Logo">
+            </div>
+                
+
+  <h4>Main Menu</h4>
+  <a href="Index.html">Home</a>
+  <a href="store.html">Products</a>
+  <a href="Services.html">Services</a>
+  <a href="About.html">About</a>
+
+  <h4>Browse Categories</h4>
+  <a href="/Products HTML/Toner Cartridge.html"><i class="fas fa-print"></i> Catridges</a>
+  <a href="/Products HTML/Head Phones.html"><i class="fas fa-headphones"></i> Head phones</a>
+  <a href="/Products HTML/Flash Drive.html"><i class="fas fa-hdd"></i> Flash Drive</a>
+  <a href="/Products HTML/Earpod.html"><i class="fas fa-music"></i> EarPod</a>
+  <a href="/Products HTML/Speaker.html"><i class="fas fa-volume-up"></i>speaker</a>
+  <a href="/Products HTML/Keyboard.html"><i class="fas fa-keyboard"></i> Keyboard</a>
+  <a href="/Products HTML/Smart Watch.html"><i class="fas fa-clock"></i>Smart Watch</a>
+  <a href="/Products HTML/Power Bank.html"><i class="fas fa-bolt"></i> Power Bank</a>
+   <a href="/Products HTML/Mouse.html"><i class="fas fa-mouse"></i> Mouse</a>
+  <a href="/Products HTML/Printer.html"><i class="fas fa-print"></i> Printers <span class="new-badge">NEW</span></a>
+
+  <h4>Extras</h4>
+  <a href="#"><i class="fas fa-heart"></i> Wishlist</a>
+  <a href="#"><i class="fas fa-balance-scale"></i> Compare</a>
+
+  <h4 class="contact-details">Contact Details</h4>
+   <div class="contact-div"> <p><i class="fas fa-phone"></i> +234 (0) 8023957773 / 8066549599 </p></div>
+   <div class="contact-div"><p><i class="fas fa-envelope"></i> NadisBestComputers@gmail.com</p></div>
+    <div class="contact-div"> <p><i class="fas fa-map-marker-alt"></i> 240, Herbert Macauley, Alagomeji, Yaba, Lagos. </p></div>
+
+
+  
+    <h6 class="footer">Developed by: Systems Business Schools | All right reserved</h6>
+
+</div>
+
+
+
+<!-- HEADER -->
+<div class="header">
+
+    <div class="left-section">
+        <div id="navbar-logo">
+         <img src="images/logo.PNG" alt="NadisBestComputers Logo">
+        </div>
+
+        <div class="search-bar">
+            <input type="text" placeholder="Search for products or brands" oninput="filterProduct()">
+            <button><i class="fas fa-search"></i></button>
+        </div>
+    </div>
+   
+
+
+    <div class="right-section">
+        <a href="">
+             <div class="cart-icon">
+               <i class="fas fa-shopping-cart" onclick="op"></i>
+               <div class="cart_count">8</div>
+             </div>
+        </a>
+       
+    </div>
+  
+</div>
+
+
+
+
+
+<!-- TOP -->
+        <div id="home-top-container">
+            <div id="home-top-wrapper">
+                <div id="home-top-text">
+                    <h1>
+                        Buy high quality products at affordable prices
+                    </h1>
+                    <p>
+                        HP toner cartridge, HP inkjet, HP printer, Canon ink, Canon toner 
+                        Flash drive, Mouse, Computer cable, JBL speakers, JBL headset 
+                        Zealot speakers, Power banks, Chargers, Earpords, Headset , All oraimo products, All new age products
+                    </p>
+                    <!-- <button class="blue-button">
+                        See Collection
+                    </button> -->
+                </div>
+                <div id="home-top-image">
+                    <img src="images/all/all.png" alt="Top Hp LaserJet">
+                </div>
+            </div>
+        </div>
+
+
+       <section class="electronics-section">
+  <h2>Plug in with our electronics</h2>
+  <div class="electronics-grid">
+    
+    <div class="product">
+      <a href="Products HTML/Toner Cartridge.html"><img src="images/Toner-Caterage/1c.jpg" alt="Toner Cartridge"></a>
+      <p>Toner Cartridge</p>
+    </div>
+
+    <div class="product">
+      <img src="images/Keyboard/1b.jpg" alt="Keyboard">
+      <p>Keyboard</p>
+    </div>
+
+    <div class="product">
+      <img src="images/headphones/12.png" alt="Headphones">
+      <p>Headphones</p>
+    </div>
+
+    <div class="product">
+      <img src="images/Mouse/15.jpg" alt="Mouse">
+      <p>Mouse</p>
+    </div>
+
+    <div class="product">
+      <img src="images/PowetBank/03.webp" alt="Power Bank">
+      <p>Power Bank</p>
+    </div>
+
+    <div class="product">
+      <img src="images/Flash-Drive/09.webp" alt="Flash Drive">
+      <p>Flash Drive</p>
+    </div>
+
+    <div class="product">
+      <img src="images/Phone-Charger/01.png" alt="Phone Charger">
+      <p>Phone Charger</p>
+    </div>
+
+    <div class="product">
+      <img src="images/Laptop-Charger/1d.jpg" alt="Laptop Charger">
+      <p>Laptop Charger</p>
+    </div>
+
+    <div class="product">
+      <img src="images/EarPiece/1b.webp" alt="Ear Piece">
+      <p>EarPiece</p>
+    </div>
+
+    <div class="product">
+      <img src="images/EarPod/1d.jpg" alt="EarPod">
+      <p>EarPod</p>
+    </div>
+
+    <div class="product">
+      <img src="product-page/smartwatch/01.png" alt="Smart Watch">
+      <p>Smart Watch</p>
+    </div>
+
+  </div>
+</section>
+
+
+
+
+<!-- THE CART -->
+<div id="cart-sidebar" class="cart-sidebar">
+   <span class="close-btn" onclick="closeCart()">&times;</span>
+
+    <h1>Your Cart</h1>
+
+  <!-- Empty Cart Message -->
+  <div id="empty-cart" class="empty-cart">
+    <p>Your cart is currently empty 🛒</p>
+  </div>
+  
+  <div id="cart-items" class="cart-items">
+    <div class="cart-item">
+         <img src="images/headphones/06.png" alt="Headphone">
+    
+      <div class="item-details">
+         <h4>Headphone</h4>
+           <p>Price: ₦3,000</p>
+           <p class="original-price">₦4,000 <span class="discount">-3%</span></p>
+      </div>
+
+      <div class="actions">
+        <input type="number" name="" id="product-quantity" placeholder="0">
+        <button id="delete-product" onclick="delete_item()" >
+        <i class="fas fa-trash"></i>Delete
+      </button>
+      </div>
+
+      
+    </div>
+  </div>
+  
+  
+
+      <div id="cart-total" class="cart-total">
+        <h3>Total: <span> ₦3,000</span></h3>
+        <button class="checkout-btn">Checkout</button>
+      </div>
+  </div>
+</div>
+
+
+
+
+                 
+
+<!-- <div id="footer"></div> -->
+ <footer class="bottom-tab-nav">
+  <a href="Index.html" class="nav-link active">
+    <i class="fas fa-home"></i>
+    <span>Home</span>
+  </a>
+  <a href="store.html" class="nav-link">
+    <i class="fas fa-store"></i>
+    <span>Store</span>
+  </a>
+
+  <a href="#"  class="sideNav" onclick="openNav()">
+    <i class="fas fa-th"></i>
+    <span>Menu</span>
+  </a>
+
+
+  <a href="tel:+2348066549599" class="nav-link">
+    <i class="fas fa-phone"></i>
+    <span>Phone</span>
+  </a>
+  
+  <a href="https://wa.me/2348023957773?text=Hello%2C%20I'm%20interested%20in%20your%20products" class="nav-link" target="_blank">
+    <i class="fas fa-comment-dots"></i>
+    <span>Chat Us</span>
+  </a>
+
+  
+
+</footer>
+</body>
+</html>
