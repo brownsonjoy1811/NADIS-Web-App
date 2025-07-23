@@ -130,6 +130,23 @@ const searchButton = document.getElementById('searchBtn');
              }
         });
 
+       //Trigger seerch on enter key after an input
+       searchInput.addEventListener('change', (event) => {
+            const searchTerm = searchInput.value.toLowerCase().trim();
+
+             if(searchTerm.trim() === ""){
+                allProducts = []
+             }
+             else if(event.key === "Enter" || searchTerm.trim() !== ""){
+                   const debounceSearchterm = () => {
+                    setTimeout(()=>{
+                        return filterProducts(searchTerm);
+                        }, 500)
+                    }
+                debounceSearchterm();
+              }
+        });
+
         
     const initializeStore = () => {
         
