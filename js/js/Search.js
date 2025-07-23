@@ -63,9 +63,11 @@ const searchButton = document.getElementById('searchBtn');
             if (storedProducts) {
                 try {
                     cartItems = JSON.parse(cartItems);
-                } catch (e) {
-                    console.error("Error parsing stored cart from localStorage:", e);
+                } catch (error) {
+                    console.error("Error parsing stored cart from localStorage:", error);
                     cartItems = []; // Reset cart if parsing fails
+                }finally {
+                   console.log("Cart updated successfully")
                 }
             }
         };
@@ -149,9 +151,10 @@ const searchButton = document.getElementById('searchBtn');
 
         
     const initializeStore = () => {
-        
-        loadCartFromLocalStorage(); // Load cart when store initializes
 
+        saveCartToLocalStorage(); //save cart when store initializes
+        loadCartFromLocalStorage(); // Load cart
+ when store initializes
     };
 
 // call initializestore when the browser loads
