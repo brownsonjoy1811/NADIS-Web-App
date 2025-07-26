@@ -1,0 +1,21 @@
+.chat-us-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: rgb(224, 220, 220);
+  color: #6a00ff;
+  font-size: 40px;
+  height: 55px;
+  width: 50px;
+  border-radius: 100%;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  z-index: 9999;
+  transition: background 0.3s ease;
+}
+
+.chat-us-btn:hover {
+  /* background-color: #5100cc; */
+  color: #000;
+  cursor: pointer;
+}

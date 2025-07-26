@@ -1,0 +1,25 @@
+const options = {
+  method: 'GET',
+  url: 'https://real-time-product-search.p.rapidapi.com/search-light-v2',
+  params: {
+    q: 'Nike shoes',
+    country: 'us',
+    language: 'en',
+    page: '1',
+    limit: '10',
+    sort_by: 'BEST_MATCH',
+    product_condition: 'ANY',
+    return_filters: 'false'
+  },
+  headers: {
+    'x-rapidapi-key': '6738e2149fmshcb4728312bd9c0dp1b5fedjsnc7447a53bcf4',
+    'x-rapidapi-host': 'real-time-product-search.p.rapidapi.com'
+  }
+};
+
+try {
+	const response = await axios.request(options);
+	console.log(response.data);
+} catch (error) {
+	console.error(error);
+}
